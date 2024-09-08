@@ -1,11 +1,13 @@
+import s from "./Options.module.css"
+
 export default function Options({callback, hasFeedback, reset}) {
     return (
         <>
-        <button onClick={()=>{callback('good')}}>good</button>
-        <button onClick={()=>{callback('neutral')}}>neutral</button>
-        <button onClick={()=>{callback('bad')}}>bad</button>
+        <button  className={s.btn} onClick={()=>{callback('good')}}>good</button>
+        <button  className={s.btn} onClick={()=>{callback('neutral')}}>neutral</button>
+        <button  className={s.btn} onClick={()=>{callback('bad')}}>bad</button>
         {hasFeedback && (
-                <button onClick={reset}>reset</button>
+                <button className={s.btn} onClick={reset}>reset</button>
         )}
         </>
     )

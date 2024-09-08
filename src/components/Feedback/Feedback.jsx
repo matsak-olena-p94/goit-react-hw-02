@@ -1,8 +1,7 @@
-
 export default function Feedback({reviews, allFeedback}) {
     
     return (
-        <div>
+        <div className="text">
             <p>good: {reviews.good}</p>
             <p>neutral: {reviews.neutral}</p>
             <p>bad: {reviews.bad}</p>

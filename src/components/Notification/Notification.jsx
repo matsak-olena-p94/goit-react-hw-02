@@ -1,7 +1,7 @@
 export default function Notification() {
   return(
       <>
-      <p>There is no feedback yet</p>
+      <p className="text">There is no feedback yet</p>
       </>
   )
 }
